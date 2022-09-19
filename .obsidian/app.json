@@ -1,0 +1,7 @@
+{
+  "attachmentFolderPath": "./attachments",
+  "communityThemeSortOrder": "release",
+  "autoPairMarkdown": true,
+  "strictLineBreaks": false,
+  "readableLineLength": true
+}
