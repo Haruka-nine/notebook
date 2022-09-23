@@ -1133,3 +1133,182 @@ import ，export与export default是ES6支持的导入和导出方式。
 
 Polyfill : 解决浏览器对API的兼容问题的。
 Babel : Babel 是一个广泛使用的 ES6 转码器，可以将 ES6 代码转为 ES5 代码。
+
+# 闭包
+
+闭包（**closure**）是Javascript语言的一个难点，也是它的特色。
+
+闭包的作用:通过一系方法,将函数内部的变量**(局部变量)转化为全局变量。**
+
+要理解闭包，首先必须理解Javascript特殊的变量作用域。
+
+变量的作用域无非就是两种：**全局变量**和**局部变量**。
+## 变量的作用域
+Javascript语言的特殊之处，就在于函数内部可以直接读取全局变量。
+```js
+var n=999;
+
+function f1(){
+alert(n);
+}
+
+f1();    // 999
+```
+
+另一方面，在函数外部无法读取函数内的局部变量。
+```js
+function f1(){
+var n=999;
+}
+
+alert(n);   // error
+
+```
+
+这里有一个地方需要注意， 函数内部声明变量的时候，一定要使用var命令(ler 或者 const都行，重要是要定义)。如果不用的话，你实际上声明了一个全局变量！ 
+```js
+function f1(){
+n=999;
+
+}
+
+f1();
+
+alert(n);   // 999
+
+```
+## 如何从外部读取局部变量
+出于种种原因，我们有时候需要得到函数内的局部变量。但是，正常情况下，这是办不到的，只有通过变通方法才能实现。**那就是在函数的内部，再定义一个函数。**
+```js
+function f1(){
+
+var n=999;   
+
+function f2(){  
+alert(n);    // 999  
+}
+
+}
+```
+在上面的代码中，函数f2就被包括在函数f1内部，这时f1内部的所有局部变量，对f2都是可见的。但是反过来就不行，f2内部的局部变量，对f1就是不可见的。这就是Javascript语言特有的"链式作用域"结构（chain scope），子对象会一级一级地向上寻找所有父对象的变量。所以，父对象的所有变量，对子对象都是可见的，反之则不成立。
+
+既然f2可以读取f1中的局部变量，那么只要把f2作为返回值，我们不就可以在f1外部读取它的内部变量了吗！
+```js
+function f1(){
+
+var n=999;
+
+function f2(){  
+alert(n);   
+}
+
+return  f2;
+
+}
+
+var result=f1();
+
+result(); // 999
+```
+## 延长函数环境的生命周期
+当我们只调用函数时：
+```js
+function hd(){
+    let n = 1;
+    function sum(){
+      console.log(++n);
+    }
+    sum();
+  }
+  hd();//2
+  hd();//2
+```
+从上面例子我们可以知道，单纯的调用的话，这个函数是会在[内存](https://so.csdn.net/so/search?q=%E5%86%85%E5%AD%98&spm=1001.2101.3001.7020)里直接删除的。因为没有变量去指向它，这样会导致js内部觉得你不需要了。无论是全局还是局部，都会被删除
+
+再加深下理解：
+```js
+function hd1(){
+    let n = 1;
+    return function sum(){
+      // console.log(++n);
+      let m = 7;
+      function show(){
+        console.log(++m);
+      }
+      show();
+    }
+    sum();
+  }
+  let tem1 = hd1();//8
+  tem1();//8
+  tem1();//8
+  tem1();//8
+
+```
+此时我们发现我们创建了一个show方法，但是跟之前一样，使用完show方法后自动销毁了。**这是因为此时没有指向show方法的对象，没有引用他，没有保留show方法的内存空间**
+
+```js
+  function hd1(){
+    let n = 1;
+    return function sum(){
+      let m = 7;
+      return function show(){
+        console.log(++m);
+        console.log(n);//输出1
+
+      }
+      show();
+    }
+    sum();
+  }
+  let tem1 = hd1()();//此时时执行了sum函数,执行了之后返回了show()函数
+  tem1();//8
+  tem1();//9
+  tem1();//10
+  let tem2 = hd1()();//此时是新开辟了一个内存空间，m的起始值还是7m
+  tem2();//8
+  tem2();//9
+  tem1();//11
+```
+这时show也保留
+
+所以，如果定义一个对象指向一个方法的子元素，那么这个方法的内存空间作为父元素就会被保存
+
+# 防抖和节流
+
+节流和防抖的目的：都是为了限制函数的执行频次，以优化函数触发频率过高导致的响应速度跟不上触发频率，防止在短时间内频繁触发同一事件而出现延迟，假死或卡顿的现象。
+节流和防抖的区别：
+节流：目前有一事件A设置了定时器，那么在delay之前触发，都只会触发一次
+防抖：如果不断在delay之前重新触发，那么定时器会不断重新计时，最终会在最后一次完后才执行，对于需要实时响应的，应该用节流。
+以下分别是节流和防抖的实现代码
+## 节流
+```js
+function throttle_1(fn,wait){
+  var flag = true;
+  return function(){
+  	var context = this
+    var args = arguments
+    if(flag){
+      flag = false
+      setTimeout(() => {
+        fn.apply(context,args)
+        flag = true
+      },wait)
+    }
+  }
+}
+```
+## 防抖
+```js
+function debounce_1(fn,wait){
+  var timerId = null;
+  return function(){
+  	var context = this
+    var args = arguments
+    clearTimeout(timerId);
+    timerId = setTimeout(() => {
+      fn.apply(context,args)
+    },wait)
+  }
+}
+```

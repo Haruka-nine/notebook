@@ -1,3 +1,12 @@
 {
-  "blue-topaz-theme@@quiet-outline-optimize": true
+  "blue-topaz-theme@@transparent-setting-panel": false,
+  "blue-topaz-theme@@line-width-readable": 60,
+  "blue-topaz-theme@@background-settings-workplace-background-image": false,
+  "blue-topaz-theme@@background-settings-workplace-theme-light-custom": "url(\"https://haruka.obs.cn-east-2.myhuaweicloud.com/%E5%88%BB%E6%99%B4ij.png\")",
+  "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-theme-light-custom-option",
+  "blue-topaz-theme@@blur-depth": 0,
+  "blue-topaz-theme@@brightness-4-bg": 0.8,
+  "blue-topaz-theme@@hide-vault-name": true,
+  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-default",
+  "blue-topaz-theme@@code-box-style-option": "codebox-default-style"
 }

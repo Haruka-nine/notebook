@@ -143,7 +143,7 @@ Ajax可以在浏览器中向服务器发送请求:即无刷新获取数据
 
 为一个页面创建事件，为这个事件设置AJAX操作
 
-```
+```js
            //1.创建对象
             const xhr = new XMLHttpRequest()
             //2.初始化 设置请求方法和url
@@ -239,17 +239,15 @@ response.send(str)
 浏览器接收到json字符串数据我们需要将其转化为json数据
 
 1. ```js
-   //手动转化
+//手动转化
    let data = JSON.parse(xhr.response)
-   data就是传回来的json数据
-   ```
-
-2. ``` js
+   data就是传回来的json数据  
+  2.  ```js
    //自动转化
    //在xhr.open（）前添加响应数据类型
    xhr.responseType='json'
    这样返回的 xhr.response会自动转为json对象数据
-   ```
+
 
 
 

@@ -3,5 +3,7 @@
   "communityThemeSortOrder": "release",
   "autoPairMarkdown": true,
   "strictLineBreaks": false,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "smartIndentList": true,
+  "defaultViewMode": "preview"
 }

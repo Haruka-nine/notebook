@@ -1588,7 +1588,44 @@ background-attachment
 ```
 
 ## 动画
+### animation
+```css
+/*
+animation
+ 可以设置动画的运行状态
+ 
+*/
+.div{
+	/* 动画名称 */
+	animation-name: move;  /*这里是关键帧动画的名称*/
+	/* 持续时间 */
+	animation-duration: 4s;
+	/* 动画速度曲线 */
+	animation-timing-function: ease;
+	/* 动画开始时间 */
+	animation-delay: 1s;
+	/* 动画播放次数 */
+	/* animation-iteration-count: 2; */
+	/* 动画播放方向 */
+	/* animation-direction: alternate; */
+	/* 动画结束后状态 */
+	animation-fill-mode: forwards;
+}
 
+/*简写*/
+.div{
+ /* animation: 动画名称 持续时间 运动曲线 何时开始 播放次数 是否反方向 起始与结束状态 */
+   animation: name duration timing-function delay iteration-count direction fill-mode
+}
+
+简写里面不包含 animation-paly-state
+暂停动画 animation-paly-state: paused; 经常和鼠标经过等其他配合使用
+要想动画走回来，而不是直接调回来：animation-direction: alternate
+盒子动画结束后，停在结束位置：animation-fill-mode: forwards
+
+
+```
+### 关键帧
 ```css
 /* 
 动画
@@ -1828,7 +1865,7 @@ https://blog.csdn.net/u010358168/article/details/107151859
 /* justify-content: center; */
 ```
 
-#### **flex-wrap**
+#### flex-wrap
 
 ```
 /* flex-wrap: 
@@ -1840,11 +1877,11 @@ https://blog.csdn.net/u010358168/article/details/107151859
 */
 ```
 
-#### **flex-flow**
+#### flex-flow
 
 flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。
 
-#### **align-items**
+#### align-items
 
 ```
 /*
@@ -1861,7 +1898,7 @@ flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认
  */
 ```
 
-#### **align-content属性**
+#### align-content属性
 
 align-content属性定义了多根轴线（多行）的对齐方式。如果项目只有一根轴线（一行），该属性不起作用。
 如果flex-direction的值是column，则该属性定义了多列的对齐方式。如果项目只有一列，该属性不起左右。
@@ -1891,7 +1928,7 @@ order决定了flex items的排布顺序。
 - 可以设置任意整数(正整数 负整数 0) ，值越小，就越排在前面
 - 默认值为0
 
-####  **flex-grow**
+####  flex-grow
 
 lex-grow属性定义项目的放大比例，默认为0。
 

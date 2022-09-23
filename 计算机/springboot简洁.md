@@ -1129,3 +1129,36 @@ public class ParameterTestController {
 }
 ```
 
+## mapper和xml文件
+项目中创建mapper接口，编写xml文件sql语句，执行出现错误
+
+ibatis.binding.BingdingException: Invalid bond statement (not found) :com.atguigu.eduservice.mapper
+
+这个错误首先是maven的默认加载机制的问题
+
+maven加载的时候，把java文件夹里面 .java类型的文件进行编译，如果其他类型的文件，不会加载
+
+所以有两种解决方法
+1. 在maven中配置，让maven中可以加载其他类型的文件,在pom中添加下面配置
+```xml
+<build>  
+    <resources>  
+        <resource>  
+            <directory>src/main/java</directory>  
+            <includes>  
+                <include>**/*.xml</include>  
+            </includes>  
+            <filtering>false</filtering>  
+        </resource>  
+    </resources>  
+</build>
+```
+然后在spring boot的配置文件中mybatis文件 xml文件的路径
+```properties
+mybatis-plus.mapper-locations=classpath:com/atguigu/eduService/mapper/xml/*.xml
+```
+上方是文件路径
+
+2. 可以将文件放入resocrous 文件夹，因为resocrous文件夹中的文件会被加载
+选用这种方法建议修改代码生成器的路径，直接让xml生成在resocrous中
+然后再配置spring boot的配置文件中mybatis文件 xml文件的路径
