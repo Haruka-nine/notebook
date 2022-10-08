@@ -1,5 +1,9 @@
 # springboot
 
+![[Pasted image 20221004101225.png]]
+
+
+
 ## 配置文件解析
 
 ### 上传文件大小
@@ -46,6 +50,19 @@ max-request-size：一次请求中所有上传文件总大小限制
 </dependencies>
 ```
 
+```xml
+<!--微服务的话可以建立一个空的父类，用于规定其子类的依赖版本，这时将这个父类的打包方式为pom-->
+<packaging>pom</packaging>
+```
+ 项目的打包类型：pom、jar、war
+
+  1.pom工程：用在父级工程或聚合工程中。用来做jar包的版本控制。
+
+  2.war工程：将会打包成war，发布在服务器上的工程。如网站或服务。
+
+  3.jar工程：将会打包成jar用作jar包使用，packaging默认类型。
+
+
 ### 创建主程序
 
 ```java
@@ -54,6 +71,23 @@ public class MainApplication {
     public static void main(String[] args) {
         SpringApplication.run(MainApplication.class,args);
     }
+}
+
+//如果此模块不使用数据库，不想在配置文件中配置数据库，主程序修改不扫描
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+public class MainApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(MainApplication.class,args);
+    }
+}
+
+//如果当前模块的主模块在com.atguigu.vod包中，而引入的工具模块在com.atguigu.until包中，默认识别不到spring配置需要添加ComponentScan
+@SpringBootApplication 
+@ComponentScan(basePackages = {"com.atguigu"})  
+public class EduApplication {  
+    public static void main(String[] args) {  
+        SpringApplication.run(EduApplication.class, args);  
+    }  
 }
 ```
 
@@ -155,6 +189,44 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot
 </dependency>
 ```
 
+微服务的父模块版本进行版本控制
+```xml
+<!--使用properties进行版本限定-->
+<!--统一管理jar包版本-->  
+<properties>  
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+  <maven.compiler.source>17</maven.compiler.source>  
+  <maven.compiler.target>17</maven.compiler.target>  
+  <junit.version>4.12</junit.version>  
+  <lombok.version>1.18.10</lombok.version>  
+  <log4j.version>1.2.17</log4j.version>  
+  <mysql.version>8.0.28</mysql.version>  
+  <druid.version>1.1.16</druid.version>  
+  <mybatis.spring.boot.version>2.2.2</mybatis.spring.boot.version>  
+</properties>
+<!--使用dependencyManagement进行对子版本的版本锁定-->
+<dependencyManagement>  
+  <dependencies>  
+    <dependency>  
+      <!--spring boot 2.6.11-->  
+      <groupId>org.springframework.boot</groupId>  
+      <artifactId>spring-boot-dependencies</artifactId>  
+      <version>2.6.11</version>  
+      <type>pom</type>  
+      <scope>import</scope>  
+    </dependency>  
+  
+    <!--spring cloud 2021.0.4-->  
+    <dependency>  
+      <groupId>org.springframework.cloud</groupId>  
+      <artifactId>spring-cloud-dependencies</artifactId>  
+      <version>2021.0.4</version>  
+      <type>pom</type>  
+      <scope>import</scope>  
+    </dependency>
+  </dependencies>  
+</dependencyManagement>
+```
 ### 自动配置
 
 - 自动配好Tomcat
@@ -187,7 +259,7 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot
 
 - - 主程序所在包及其下面的所有子包里面的组件都会被默认扫描进来
   - 无需以前的包扫描配置
-  - 想要改变扫描路径，@SpringBootApplication(scanBasePackages=**"com.atguigu"**)
+  - 想要改变扫描路径，*@SpringBootApplication(scanBasePackages=**"com.atguigu"**)*
 
 - - - 或者@ComponentScan 指定扫描路径
 
@@ -209,6 +281,13 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot
 - - 非常多的starter
   - 引入了哪些场景这个场景的自动配置才会开启
   - SpringBoot所有的自动配置功能都在 spring-boot-autoconfigure 包里面
+
+### @Value
+```java
+@Value("${service-url.nacos-user-service}")  
+private String serverURL;
+```
+这样可以将配置文件中的值注入。
 
 # 容器功能
 
@@ -1013,8 +1092,7 @@ spring:
 
 对于@PathVariable，当我们使用rest方式的路径时/car/{id}/owner/{username}
 
-我们使用这个注解获取参数@PathVariable("id") Integer id,
-                                              @PathVariable("username") String name,
+我们使用这个注解获取参数@PathVariable("id") Integer id,@PathVariable("username") String name,
 
 @PathVariable Map<String,String> pv,
 

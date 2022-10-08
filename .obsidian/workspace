@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "计算机/软件工程.md",
+            "file": "计算机/redis.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/软件工程.md"
+                "file": "计算机/redis.md"
               }
             }
           },
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "requestb",
+                "query": "filter",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机/软件工程.md",
+                "file": "计算机/redis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机/软件工程.md",
+                "file": "计算机/redis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,15 +132,15 @@
   },
   "active": "7eae6e084d96ab9d",
   "lastOpenFiles": [
+    "计算机/spring cloud.md",
+    "计算机/Docker.md",
+    "计算机/redis.md",
+    "计算机/插件使用.md",
+    "计算机/软件工程.md",
     "计算机/小程序相关.md",
-    "计算机/css.md",
-    "计算机/Vue2.md",
-    "计算机/SpringMVC.md",
+    "计算机/spring boot 插件.md",
     "计算机/springboot-1.md",
-    "计算机/springboot简洁.md",
-    "计算机/MyBatis.md",
-    "计算机/Linux 1/模式转换.png.md",
-    "计算机/vue3.md",
-    "计算机/springboot-2.md"
+    "计算机/springboot-2.md",
+    "计算机/springboot简洁.md"
   ]
 }

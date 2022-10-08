@@ -342,7 +342,7 @@ public void testDeleteById(){
 
 #### b、根据ID批量删除数据
 
-> **调用方法：int deleteBatchIds(@Param(Constants.COLLECTION) Collection<? extends Serializable> idList);**
+> **调用方法：`int deleteBatchIds(@Param(Constants.COLLECTION) Collection<? extends Serializable> idList);`**
 
 ```java
 /**
@@ -429,7 +429,7 @@ public void testSelectById(){
 
 #### b、根据多个ID查询多个用户信息
 
-> **调用方法：List<T> selectBatchIds(@Param(Constants.COLLECTION) Collection<? extends Serializable> idList);**
+> **调用方法：`List<T> selectBatchIds(@Param(Constants.COLLECTION) Collection<? extends Serializable> idList);`**
 
 ```java
 /**
@@ -450,7 +450,7 @@ public void testSelectBatchIds(){
 
 #### c、根据Map条件查询用户信息
 
-> **调用方法：List<T> selectByMap(@Param(Constants.COLUMN_MAP) Map<String, Object> columnMap);**
+> **调用方法：`List<T> selectByMap(@Param(Constants.COLUMN_MAP) Map<String, Object> columnMap);`**
 
 ```java
 /**
@@ -470,7 +470,7 @@ public void testSelectByMap(){
 
 #### d、查询所有用户信息
 
-> **调用方法：List<T> selectList(@Param(Constants.WRAPPER) Wrapper<T> queryWrapper);**
+> **调用方法：`List<T> selectList(@Param(Constants.WRAPPER) Wrapper<T> queryWrapper);`**
 
 ```java
 /**
@@ -649,7 +649,7 @@ MyBatis-Plus中有一个接口 **`IService`**和其实现类 **`ServiceImpl`**�
 
 - **测试批量插入数据**
 
-  > **调用方法：boolean saveBatch(Collection<T> entityList);**
+  > **调用方法：`boolean saveBatch(Collection<T> entityList);`**
 
   ```java
   @Test
@@ -883,6 +883,18 @@ public class User {
 注意：低版本3.1.1以下的版本需要配置逻辑删除插件，高版本只需要设置@TableLogic就可以
 
 mybatisplus官方的更新文档中表示 在3.1.1版本及以上 都不需要手动注册逻辑删除插件，但如果两者(mybatislplus依赖 和代码生成器依赖)版本不一致，则会出现逻辑删除失效
+
+但都需要配置配置文件
+
+```yaml
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: flag # 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+```
+
 
 ### 4.2	实现逻辑删除
 
