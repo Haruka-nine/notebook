@@ -1785,11 +1785,3 @@ class TestDatasourceApplicationTests {
 ![image-20220522123202310](https://image-bed-vz.oss-cn-hangzhou.aliyuncs.com/MyBatis-Plus/image-20220522123202310.png)
 
 
-
-# 十、致谢
-
-感谢尚硅谷杨博超老师：https://www.bilibili.com/video/BV12R4y157Be?p=1
-
-感谢MyBatis-Plus作者苞米豆：https://baomidou.com/
-
-感谢自己又坚持学习了一门课程：https://www.oz6.cn/

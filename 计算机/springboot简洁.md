@@ -1208,6 +1208,8 @@ public class ParameterTestController {
 ```
 
 ## mapper和xml文件
+
+### mapper和xml文件路径不一样 
 项目中创建mapper接口，编写xml文件sql语句，执行出现错误
 
 ibatis.binding.BingdingException: Invalid bond statement (not found) :com.atguigu.eduservice.mapper
@@ -1240,3 +1242,17 @@ mybatis-plus.mapper-locations=classpath:com/atguigu/eduService/mapper/xml/*.xml
 2. 可以将文件放入resocrous 文件夹，因为resocrous文件夹中的文件会被加载
 选用这种方法建议修改代码生成器的路径，直接让xml生成在resocrous中
 然后再配置spring boot的配置文件中mybatis文件 xml文件的路径
+
+### xml和mapper路径相同
+
+路径相同可以不同配置xml文件路径，如果放在resocrous文件夹就更简单省去maven配置
+![[Pasted image 20221013135453.png]]
+
+
+
+>[!note] mybatis路径
+>mybatis-plus的默认路径为
+>`mapper-locations: classpath*:/mapper/**/*.xml`
+>也就是说直接放在resources的mapper文件夹下就行
+
+

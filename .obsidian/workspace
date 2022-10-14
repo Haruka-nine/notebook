@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "计算机/redis.md",
+            "file": "计算机/git.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/redis.md"
+                "file": "计算机/git.md"
               }
             }
           },
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "filter",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -67,8 +67,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -88,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机/redis.md",
+                "file": "计算机/git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机/redis.md",
+                "file": "计算机/git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,25 +121,24 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "7eae6e084d96ab9d",
+  "active": "02868570d2e7d571",
   "lastOpenFiles": [
-    "计算机/spring cloud.md",
-    "计算机/Docker.md",
-    "计算机/redis.md",
-    "计算机/插件使用.md",
-    "计算机/软件工程.md",
-    "计算机/小程序相关.md",
-    "计算机/spring boot 插件.md",
+    "计算机/JVM.md",
+    "node/中间件.png 1.md",
+    "node/中间件.png.md",
+    "计算机/es6.md",
+    "计算机/vue3.md",
     "计算机/springboot-1.md",
-    "计算机/springboot-2.md",
+    "计算机/SpringSecurity.md",
+    "计算机/MyBatis.md",
+    "计算机/SpringMVC.md",
     "计算机/springboot简洁.md"
   ]
 }

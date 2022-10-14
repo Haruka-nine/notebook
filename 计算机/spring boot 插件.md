@@ -705,3 +705,235 @@ EasyExcel.read(fileName, DemoData.class, new DemoDataListener()).sheet()
 其他情况，具体看官网介绍，这里只是理解概念流程
 
 
+# Mybatis-plus代码生成
+
+根据数据库进行代码反向生成
+官网：https://baomidou.com/pages/779a6e/
+
+## 依赖导入
+```xml
+<!--mybatis-plus-->
+<dependency>  
+    <groupId>com.baomidou</groupId>  
+    <artifactId>mybatis-plus-boot-starter</artifactId>  
+    <version>3.5.2</version>  
+</dependency>  
+<!--代码生成器-->
+<dependency>  
+    <groupId>com.baomidou</groupId>  
+    <artifactId>mybatis-plus-generator</artifactId>  
+    <version>3.5.3</version>  
+</dependency>  
+<!--代码生成器所需依赖-->
+<dependency>  
+    <groupId>org.springframework.boot</groupId>  
+    <artifactId>spring-boot-starter-freemarker</artifactId>  
+</dependency>
+```
+
+
+## 代码实现
+
+有很多设置可调，具体看官网设置，下方仅为参考
+```java
+package com.haruka.tokendemo;  
+  
+import com.baomidou.mybatisplus.generator.FastAutoGenerator;  
+import com.baomidou.mybatisplus.generator.config.OutputFile;  
+import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;  
+import org.junit.jupiter.api.Test;  
+  
+import java.util.Collections;  
+  
+public class mybatis {  
+    @Test  
+    public void run(){  
+        FastAutoGenerator.create("jdbc:mysql://localhost:3306/spring?characterEncoding=utf-8&serverTimezone=UTC", "root", "wang200301")  
+                .globalConfig(builder -> {  
+                    builder.author("haruka_nine") // 设置作者  
+                            .enableSwagger() // 开启 swagger 模式  
+                            .fileOverride() // 覆盖已生成文件(这个设置已被废弃)  
+                            .outputDir("C:\\Users\\YYM\\Desktop\\java\\SpringSecurity\\TokenDemo\\src\\main\\java"); // 指定输出目录  
+                })  
+                .packageConfig(builder -> {  
+                    builder.parent("com.haruka") // 设置父包名  
+                            .moduleName("tokendemo") // 设置父包模块名  
+                            .pathInfo(Collections.singletonMap(OutputFile.xml, "C:\Users\YYM\Desktop\java\SpringSecurity\TokenDemo\src\main\resources\com\haruka\tokendemo\mapper")); // 设置mapperXml生成路径  
+                })  
+                .strategyConfig(builder -> {  
+                    builder.addInclude("sys_user") // 设置需要生成的表名  
+                            .addTablePrefix("t_", "c_","sys_"); // 设置过滤表前缀  
+                    builder.serviceBuilder()  
+                            .formatServiceFileName("%sService"); //去掉service前的i
+                    builder.entityBuilder()  
+                            .enableLombok();   //使用lombok
+                    builder.controllerBuilder()  
+                            .enableHyphenStyle()  
+                            .enableRestStyle();  
+  
+                })  
+                .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板  
+                .execute();  
+  
+    }  
+}
+```
+
+# Redis
+
+## 依赖引入
+
+```xml
+<!--redis连接的依赖-->
+<dependency>  
+    <groupId>org.springframework.boot</groupId>  
+    <artifactId>spring-boot-starter-data-redis</artifactId>  
+</dependency>  
+<!--连接池配置，导入就启用连接池，不导入就不启用--> 
+<dependency>  
+    <groupId>org.apache.commons</groupId>  
+    <artifactId>commons-pool2</artifactId>  
+</dependency>
+```
+## 配置文件
+```properties
+#redis服务器地址  
+spring.redis.host=192.168.10.10  
+#redis服务器端口  
+spring.redis.port=6379  
+#密码  
+spring.redis.password=wang200301  
+#redis数据库索引  
+spring.redis.database=0  
+# 连接超时时间（毫秒）  
+spring.redis.timeout=1800000  
+  
+# 连接池配置  
+#连接池最大连接数（使用负值表示没有限制）  
+spring.redis.lettuce.pool.max-active=20  
+#最大阻塞等待时间（使用负值表示没有限制）
+spring.redis.lettuce.pool.max-wait=-1  
+  
+#连接池中最大空闲连接  
+spring.redis.lettuce.pool.max-idle=5  
+#连接池中最小空闲连接  
+spring.redis.lettuce.pool.min-idle=0
+```
+
+## 使用
+```java
+@RestController  
+@RequestMapping("/redisTest")  
+public class RedisTestController {  
+  
+    @Autowired  
+    private StringRedisTemplate redisTemplate;  
+  
+    @GetMapping  
+    public String testRedis(){  
+        User user = new User("cv战士", 12);  
+        redisTemplate.opsForValue().set("user222", String.valueOf(user));  
+        return redisTemplate.opsForValue().get("user222");  
+    }  
+}
+```
+
+
+## Redis序列化配置
+
+### String序列化
+
+直接使用 StringRedisTemplate
+
+### FastJson序列化
+```java
+  
+@Configuration  
+public class RedisConfig {  
+  
+    @Bean  
+    @SuppressWarnings(value = { "unchecked", "rawtypes" })  
+    public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory connectionFactory)  
+    {  
+        RedisTemplate<Object, Object> template = new RedisTemplate<>();  
+        template.setConnectionFactory(connectionFactory);  
+  
+        GenericFastJsonRedisSerializer serializer = new GenericFastJsonRedisSerializer();  
+        // 使用StringRedisSerializer来序列化和反序列化redis的key值  
+        template.setKeySerializer(new StringRedisSerializer());  
+        template.setValueSerializer(serializer);  
+  
+        // Hash的key也采用StringRedisSerializer的序列化方式  
+        template.setHashKeySerializer(new StringRedisSerializer());  
+        template.setHashValueSerializer(serializer);  
+  
+        template.afterPropertiesSet();  
+        return template;  
+    }  
+}
+```
+
+### Jackson2Json序列化
+
+```java
+@Configuration  
+public class RedisConfig {  
+  
+    @Bean  
+    @SuppressWarnings(value = { "unchecked", "rawtypes" })  
+    public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory connectionFactory)  
+    {  
+        RedisTemplate<Object, Object> template = new RedisTemplate<>();  
+        template.setConnectionFactory(connectionFactory);  
+
+        Jackson2JsonRedisSerializer serializer = new Jackson2JsonRedisSerializer<>(Object.class);   
+        // 使用StringRedisSerializer来序列化和反序列化redis的key值  
+        template.setKeySerializer(new StringRedisSerializer());  
+        template.setValueSerializer(serializer);  
+  
+        // Hash的key也采用StringRedisSerializer的序列化方式  
+        template.setHashKeySerializer(new StringRedisSerializer());  
+        template.setHashValueSerializer(serializer);  
+  
+        template.afterPropertiesSet();  
+        return template;  
+    }  
+}
+```
+
+# FastJson
+
+>[!note] fastjson版本
+>现在有1.x，12兼容版，2.x版本
+>1.x版本截至版本1.2.83,兼容版可能有bug，2.x将持续更新
+
+1.x版本引入依赖
+
+```xml
+<dependency>  
+    <groupId>com.alibaba</groupId>  
+    <artifactId>fastjson</artifactId>  
+    <version>1.2.83</version>  
+</dependency>
+```
+https://github.com/alibaba/fastjson
+
+
+2.x版本引入依赖
+
+```xml
+<dependency>  
+    <groupId>com.alibaba.fastjson2</groupId>  
+    <artifactId>fastjson2</artifactId>  
+    <version>2.0.15</version>  
+</dependency>  
+<!--spring中需要引入额外依赖-->
+<dependency>  
+    <groupId>com.alibaba.fastjson2</groupId>  
+    <artifactId>fastjson2-extension</artifactId>  
+    <version>2.0.15</version>  
+</dependency>
+```
+
+https://github.com/alibaba/fastjson2
+

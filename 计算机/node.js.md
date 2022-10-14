@@ -201,9 +201,9 @@ fs.readFile(path.join(__dirname,'/files/1.txt'),'utf-8',function (err, dataStr) 
 path.basename(path[,ext])
 ```
 
-- path <string> 必选参数，表示一个路径的字符串
-- ext <string> 可选参数，表示文件扩展名（如果写了返回值就会删除扩展名）
-- 返回: <string> 表示路径中的最后一部分
+- path` <string> `必选参数，表示一个路径的字符串
+- ext` <string> `可选参数，表示文件扩展名（如果写了返回值就会删除扩展名）
+- 返回:` <string>` 表示路径中的最后一部分
 
 ```js
 const path = require('path')
@@ -229,8 +229,8 @@ console.log(nameWithoutExt)
 path.extname(path)
 ```
 
-- path <string> 必选参数，表示一个路径的字符串
-- 返回: <string> 返回得到的扩展名字符串
+- path` <string>` 必选参数，表示一个路径的字符串
+- 返回: `<string> `返回得到的扩展名字符串
 
 ```js
 const path = require('path')
@@ -461,7 +461,7 @@ const moment = require('moment')
 
 ### 共享模块作用域成员
 
-#### **1.** **module** **对象**
+#### 1. module对象
 
 在每个 .js 自定义模块中都有一个 module 对象，它里面存储了和当前模块有关的信息
 
@@ -488,7 +488,7 @@ Module {
 }
 ```
 
-#### 2.**module.exports** **对象**
+#### 2.module.exports 对象
 
 在自定义模块中，可以使用 module.exports 对象，将模块内的成员共享出去，供外界使用。
 
@@ -633,7 +633,7 @@ npm 规定，在项目根目录中，**必须**提供一个叫做 package.json �
 
 所以我们一般不上传第三方包，需要剔除node_modeles
 
-#### **如何记录项目中安装了哪些包**
+#### 如何记录项目中安装了哪些包
 
 在项目根目录中，创建一个叫做 package.json 的配置文件，即可用来记录项目中安装了哪些包。从而方便剔除 node_modules 目录之后，在团队成员之间共享项目的源代码。
 
@@ -651,11 +651,11 @@ npm init -y
 
 ②运行 npm install 命令安装包的时候，npm 包管理工具会自动把包的名称和版本号，记录到 package.json 中。
 
-#### **dependencies** **节点**
+#### dependencies 节点
 
 package.json 文件中，有一个 dependencies 节点，专门用来记录您使用 npm install 命令安装了哪些包。
 
-#### **一次性安装所有的包**
+#### 一次性安装所有的包
 
 当我们拿到一个剔除了 node_modules 的项目之后，需要先把所有的包下载到项目中，才能将项目运行起来。
 
@@ -663,7 +663,7 @@ package.json 文件中，有一个 dependencies 节点，专门用来记录您�
 npm i
 ```
 
-#### **卸载包**
+#### 卸载包
 
 可以运行 npm uninstall 命令，来卸载指定的包：
 
@@ -673,7 +673,7 @@ npm uninstall 包名
 
 注意：npm uninstall 命令执行成功后，会把卸载的包，自动从 package.json 的 dependencies 中移除掉。
 
-#### **devDependencies** **节点**
+#### devDependencies节点
 
 如果某些包**只在项目开发阶段**会用到，在**项目上线之后不会用到**，则建议把这些包记录到 devDependencies 节点中。
 
@@ -773,7 +773,7 @@ https://yarnpkg.com/zh-Hans/docs/package-json
 - index.js     （包的入口文件）
 - README.md （包的说明文档）
 
-#### **初始化** **package.json**
+#### 初始化 package.json
 
 ```JSON
 {
@@ -854,13 +854,13 @@ npm 账号注册完成后，可以在终端中执行 npm login 命令，依次�
 
 注意：不论是内置模块、用户自定义模块、还是第三方模块，它们都会优先从缓存中加载，从而提高模块的加载效率。
 
-### **内置模块的加载机制**
+### 内置模块的加载机制
 
 内置模块是由 Node.js 官方提供的模块，内置模块的加载优先级最高。
 
 例如，require('fs') 始终返回内置的 fs 模块，即使在 node_modules 目录下有名字相同的包也叫做 fs。
 
-### **自定义模块的加载机制**
+### 自定义模块的加载机制
 
 使用 require() 加载自定义模块时，必须指定以 ./ 或 ../ 开头的路径标识符。在加载自定义模块时，如果没有指定 ./ 或 ../ 这样的路径标识符，则 node 会把它当作内置模块或第三方模块进行加载。
 
@@ -876,7 +876,7 @@ npm 账号注册完成后，可以在终端中执行 npm login 命令，依次�
 
 加载失败，终端报错
 
-### **第三方模块的加载机制**
+### 第三方模块的加载机制
 
 如果传递给 require() 的模块标识符不是一个内置模块，也没有以 ‘./’ 或 ‘../’ 开头，则 Node.js 会从当前模块的父目录开始，尝试从 /node_modules 文件夹中加载第三方模块。
 
@@ -892,7 +892,7 @@ npm 账号注册完成后，可以在终端中执行 npm login 命令，依次�
 
 ④ C:\node_modules\tools
 
-### **目录作为模块**
+### 目录作为模块
 
 当把目录作为模块标识符，传递给 require() 进行加载的时候，有三种加载方式：
 
@@ -916,7 +916,7 @@ npm 账号注册完成后，可以在终端中执行 npm login 命令，依次�
 
 Express 的中文官网：[ http://www.expressjs.com.cn/](http://www.expressjs.com.cn/)
 
-### **进一步理解** **Express**
+### 进一步理解 Express
 
 思考：不使用 Express 能否创建 Web 服务器？
 
@@ -1003,7 +1003,7 @@ app.post('/user',function (req, res) {
 })
 ```
 
-### **获取** **URL** **中携带的查询参数**
+### 获取 URL 中携带的查询参数
 
 ```js
 app.get('/',(req, res)=>{
@@ -1014,7 +1014,7 @@ app.get('/',(req, res)=>{
 })
 ```
 
-### **获取** **URL**中的动态参数
+### 获取URL中的动态参数
 
 通过req.params对象，可以访问到URL中，通过:匹配到的动态参数
 
@@ -1065,7 +1065,7 @@ app.use(express.static('files'))
 
 两个文件夹有相同命名的文件，按添加顺序查找
 
-### **挂载**路径前缀
+### 挂载路径前缀
 
 如果希望在托管的静态资源访问路径之前，挂载路径前缀，则可以使用如下的方式：
 
@@ -1103,11 +1103,11 @@ nodemon app.js
 
 ## 路由
 
-### **什么是路由**
+### 什么是路由
 
 广义上来讲，路由就是映射关系。
 
-### **Express** **中的路由**
+### Express 中的路由
 
 在 Express 中，路由指的是客户端的请求与服务器处理函数之间的映射关系。
 
@@ -1231,26 +1231,23 @@ app.use()函数的作用就是注册全局中间件
 
 中间件（Middleware ），特指业务流程的中间处理环节。
 
-#### **Express** 中间件的调用流程
+#### Express中间件的调用流程
 
 当一个请求到达 Express 的服务器之后，可以连续调用多个中间件，从而对这次请求进行预处理。
-
-![中间件](node\中间件.png)
+![[中间件.png]]
 
 #### 中间件格式
 
 Express 的中间件，本质上就是一个 **function** **处理函数**，Express 中间件的格式如下：
 
-![中间件2](node\中间件2.png)
-
+![中间件2](node/中间件2.png)
 注意：中间件函数的形参列表中，必须包含 next 参数。而路由处理函数中只包含 req 和 res。
 
 #### next 函数的作用
 
 **next** **函数**是实现多个中间件连续调用的关键，它表示把流转关系转交给下一个中间件或路由。
 
-![中间件3](node\中间件3.png)
-
+![中间件3](node/中间件3.png)
 ### 中间件使用
 
 #### 定义中间件函数
@@ -1279,7 +1276,7 @@ const mw = function (req,res,next) {
 app.use(mw)
 ```
 
-#### **定义全局中间件的简化形式**
+#### 定义全局中间件的简化形式
 
 ```js
 app.use(function (req,res,next) {
@@ -1330,7 +1327,7 @@ app.get('/',[mw1,mw2],(req, res)=>{
 })
 ```
 
-#### **了解中间件的5个使用注意事项**
+#### 了解中间件的5个使用注意事项
 
 ①一定要在路由之前注册中间件
 
@@ -1372,7 +1369,7 @@ app.get('/',mw1,(req, res)=>{
 })
 ```
 
-#### **路由级别的中间件**
+#### 路由级别的中间件
 
 绑定到 express.Router() 实例上的中间件，叫做路由级别的中间件。它的用法和应用级别中间件没有任何区别。只不过，应用级别中间件是绑定到 app 实例上，路由级别中间件绑定到 router 实例上，代码示例如下：
 
@@ -1399,9 +1396,9 @@ app.use((err, req, res, next)=>{
 })
 ```
 
-**注意：**错误级别的中间件，必须注册在所有路由之后！
+**注意：错误级别的中间件，必须注册在所有路由之后！**
 
-#### **Express内置的中间件**
+#### Express内置的中间件
 
 自 Express 4.16.0 版本开始，Express 内置了 3 个常用的中间件，极大的提高了 Express 项目的开发效率和体验：
 
@@ -1436,11 +1433,11 @@ app.use(express.urlencoded({extended:false}))
 
 这个组件现在已经被内置express.urlencoded，用法一样
 
-**注意：**Express 内置的 express.urlencoded 中间件，就是基于 body-parser 这个第三方中间件进一步封装出来的。
+**注意：Express 内置的 express.urlencoded 中间件，就是基于 body-parser 这个第三方中间件进一步封装出来的。**
 
 ### 自定义中间件
 
-#### **需求描述与实现步骤**
+#### 需求描述与实现步骤
 
 自己手动模拟一个类似于 express.urlencoded 这样的中间件，来解析 POST 提交到服务器的表单数据。
 
@@ -1553,7 +1550,7 @@ apiRouter.post('/post',(req, res)=>{
 
 **注意：如果要获取 URL-encoded 格式的请求体数据，必须配置中间件 app.use(express.urlencoded({ extended: false }))**
 
-### **CORS** **跨域资源共享**
+### CORS 跨域资源共享
 
 #### 接口的跨域问题
 
@@ -1565,7 +1562,7 @@ apiRouter.post('/post',(req, res)=>{
 
 ② JSONP（有缺陷的解决方案：只支持 GET 请求）
 
-**使用** **cors** **中间件解决跨域问题**
+**用cors中间件解决跨域问题**
 
 cors 是 Express 的一个第三方中间件。通过安装和配置 cors 中间件，可以很方便地解决跨域问题。
 
@@ -1577,7 +1574,7 @@ cors 是 Express 的一个第三方中间件。通过安装和配置 cors 中间
 
 ③在路由之前调用 app.use(cors()) 配置中间件
 
-#### **什么是** **CORS**
+#### 什么是 CORS
 
 CORS （Cross-Origin Resource Sharing，跨域资源共享）由一系列 HTTP 响应头组成，**这些** **HTTP** **响应头决定浏览器是否阻止前端** **JS** **代码跨域获取资源**。
 
@@ -1585,13 +1582,13 @@ CORS （Cross-Origin Resource Sharing，跨域资源共享）由一系列 HTTP �
 
 ![跨域](node\跨域.png)
 
-#### **CORS** **的注意事项**
+#### CORS的注意事项
 
 ①CORS 主要在服务器端进行配置。客户端浏览器**无须做任何额外的配置**，即可请求开启了 CORS 的接口。
 
 ②CORS 在浏览器中有兼容性。只有支持 XMLHttpRequest Level2 的浏览器，才能正常访问开启了 CORS 的服务端接口（例如：IE10+、Chrome4+、FireFox3.5+）。
 
-#### **CORS** **响应头部** Access-Control-Allow-Origin
+#### CORS响应头部 Access-Control-Allow-Origin
 
 响应头部中可以携带一个 **Access-Control-Allow-Origin** 字段，其语法如下:
 
@@ -1613,7 +1610,7 @@ res.setHeader('Access-Control-Allow-Origin','http://itcast.cn')
 res.setHeader('Access-Control-Allow-Origin','*')
 ```
 
-#### **CORS** **响应头部** Access-Control-Allow-Headers
+#### CORS响应头部Access-Control-Allow-Headers
 
 默认情况下，CORS **仅**支持客户端向服务器发送如下的 9 个请求头：
 
@@ -1627,7 +1624,7 @@ Accept、Accept-Language、Content-Language、DPR、Downlink、Save-Data、Viewp
 res.setHeader('Access-Control-Allow-Headers','Content-Type,X-Coustom-Header')
 ```
 
-#### **CORS** **响应头部**  Access-Control-Allow-Methods
+#### CORS响应头部Access-Control-Allow-Methods
 
 默认情况下，CORS 仅支持客户端发起 GET、POST、HEAD 请求。
 
@@ -1642,7 +1639,7 @@ res.setHeader('Access-Control-Allow-Methods'.'POST,GET,DELETE,HEAD')
 res.setHeader('Access-Control-Allow-Methods'.'*')
 ```
 
-#### **CORS请求的分类**
+#### CORS请求的分类
 
 客户端在请求 CORS 接口时，根据请求方式和请求头的不同，可以将 CORS 的请求分为两大类，分别是：
 
@@ -1650,7 +1647,7 @@ res.setHeader('Access-Control-Allow-Methods'.'*')
 
 ②预检请求
 
-#### **简单请求**
+#### 简单请求
 
 同时满足以下两大条件的请求，就属于简单请求：
 
@@ -1658,7 +1655,7 @@ res.setHeader('Access-Control-Allow-Methods'.'*')
 
 ② HTTP 头部信息不超过以下几种字段：无自定义头部字段、Accept、Accept-Language、Content-Language、DPR、Downlink、Save-Data、Viewport-Width、Width 、Content-Type（只有三个值application/x-www-form-urlencoded、multipart/form-data、text/plain）
 
-#### **预检请求**
+#### 预检请求
 
 只要符合以下任何一个条件的请求，都需要进行预检请求：
 
@@ -1670,7 +1667,7 @@ res.setHeader('Access-Control-Allow-Methods'.'*')
 
 在浏览器与服务器正式通信之前，浏览器会先发送 OPTION 请求进行预检，以获知服务器是否允许该实际请求，所以这一次的 OPTION 请求称为“预检请求”。服务器成功响应预检请求后，才会发送真正的请求，并且携带真实数据。
 
-#### **简单请求和预检请求的区别**
+#### 简单请求和预检请求的区别
 
 **简单请求的特点**：客户端与服务器之间只会发生一次请求。
 
@@ -1680,7 +1677,7 @@ res.setHeader('Access-Control-Allow-Methods'.'*')
 
 #### 概念
 
-概念：浏览器端通过 <script> 标签的 src 属性，请求服务器上的数据，同时，服务器返回一个函数的调用。这种请求数据的方式叫做 JSONP。
+概念：浏览器端通过 `<script>` 标签的 src 属性，请求服务器上的数据，同时，服务器返回一个函数的调用。这种请求数据的方式叫做 JSONP。
 
 特点：
 
@@ -1688,7 +1685,7 @@ res.setHeader('Access-Control-Allow-Methods'.'*')
 
 ②JSONP 仅支持 GET 请求，不支持 POST、PUT、DELETE 等请求。
 
-#### **创建** **JSONP** 接口的注意事项
+#### 创建JSONP 接口的注意事项
 
 如果项目中已经配置了 CORS 跨域资源共享，为了**防止冲突**，必须在配置 CORS 中间件之前声明 JSONP 的接口。否则 JSONP 接口会被处理成开启了 CORS 的接口。示例代码如下：
 
@@ -1703,7 +1700,7 @@ app.use(cors())
 app.get('/api/get',(req,res)=>{})
 ```
 
-#### **实现** **JSONP** **接口的步骤**
+#### 实现JSONP接口的步骤
 
 ①获取客户端发送过来的回调函数的名字
 
@@ -1711,7 +1708,7 @@ app.get('/api/get',(req,res)=>{})
 
 ③根据前两步得到的数据，拼接出一个函数调用的字符串
 
-④把上一步拼接得到的字符串，响应给客户端的 <script> 标签进行解析执行
+④把上一步拼接得到的字符串，响应给客户端的 `<script> `标签进行解析执行
 
 ```js
 app.get('/api/jsonp',(req,res)=>{
