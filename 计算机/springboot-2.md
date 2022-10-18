@@ -274,7 +274,7 @@ public class AdminWebConfig implements WebMvcConfigurer{
 6. 前面的步骤有任何异常都会直接倒序触发 `afterCompletion()`。
 7. 页面成功渲染完成以后，也会倒序触发 `afterCompletion()`。
 
-![在这里插入图片描述](image/20210205011212637.png)
+![在这里插入图片描述](20210205011212637.png)
 
 `DispatcherServlet`中涉及到`HandlerInterceptor`的地方：
 
@@ -1029,7 +1029,7 @@ public class DispatcherServlet extends FrameworkServlet {
 
 系统自带的**异常解析器**：
 
-![在这里插入图片描述](image/20210205011338251.png)
+![在这里插入图片描述](20210205011338251.png)
 
 
 - `DefaultErrorAttributes`先来处理异常，它主要功能把异常信息保存到request域，并且返回null。

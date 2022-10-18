@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "计算机/git.md",
-            "mode": "source",
+            "file": "计算机/SpringSecurity.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/git.md"
+                "file": "计算机/SpringSecurity.md"
               }
             }
           },
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "pom",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -67,11 +67,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 266.00000190734863
   },
   "right": {
     "id": "e34283bff16cf268",
@@ -87,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机/git.md",
+                "file": "计算机/SpringSecurity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机/git.md",
+                "file": "计算机/SpringSecurity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "02868570d2e7d571",
+  "active": "7eae6e084d96ab9d",
   "lastOpenFiles": [
     "计算机/JVM.md",
+    "计算机/springboot简洁.md",
+    "计算机/spring cloud.md",
+    "计算机/git.md",
     "node/中间件.png 1.md",
     "node/中间件.png.md",
     "计算机/es6.md",
     "计算机/vue3.md",
     "计算机/springboot-1.md",
-    "计算机/SpringSecurity.md",
-    "计算机/MyBatis.md",
-    "计算机/SpringMVC.md",
-    "计算机/springboot简洁.md"
+    "计算机/SpringSecurity.md"
   ]
 }

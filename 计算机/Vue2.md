@@ -25,7 +25,7 @@
 
 
 
-![](image/Vue和VueComponent.png)
+![](Vue和VueComponent.png)
 
 ![](image\vuex.png)
 

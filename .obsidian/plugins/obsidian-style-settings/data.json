@@ -1,12 +1,16 @@
 {
-  "blue-topaz-theme@@transparent-setting-panel": false,
-  "blue-topaz-theme@@line-width-readable": 60,
-  "blue-topaz-theme@@background-settings-workplace-background-image": false,
-  "blue-topaz-theme@@background-settings-workplace-theme-light-custom": "url(\"https://haruka.obs.cn-east-2.myhuaweicloud.com/%E5%88%BB%E6%99%B4ij.png\")",
-  "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-theme-light-custom-option",
-  "blue-topaz-theme@@blur-depth": 0,
-  "blue-topaz-theme@@brightness-4-bg": 0.8,
-  "blue-topaz-theme@@hide-vault-name": true,
+  "minimal-style@@col-lines": false,
+  "minimal-advanced@@styled-scrollbars": false,
+  "minimal-style@@titlebar-text-weight": 600,
+  "minimal-advanced@@folding-offset": 10,
   "blue-topaz-theme@@color-scheme-options": "color-scheme-options-default",
-  "blue-topaz-theme@@code-box-style-option": "codebox-default-style"
+  "blue-topaz-theme@@layout-style-options": "layout-style-options-default",
+  "blue-topaz-theme@@hide-vault-name": true,
+  "blue-topaz-theme@@transparent-setting-panel": false,
+  "blue-topaz-theme@@code-box-style-option": "codebox-default-style",
+  "blue-topaz-theme@@background-settings-workplace-background-image": false,
+  "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-theme-light-custom-option",
+  "blue-topaz-theme@@background-settings-workplace-theme-light-custom": "url(\"app://local/G:/图片/刻晴ij.png\")",
+  "blue-topaz-theme@@rainbow-checklist": false,
+  "blue-topaz-theme@@line-width-readable": 50
 }

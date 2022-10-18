@@ -2,5 +2,8 @@
   "cssTheme": "Blue Topaz",
   "theme": "moonstone",
   "baseFontSizeAction": true,
-  "baseFontSize": 16
+  "baseFontSize": 15,
+  "accentColor": "",
+  "showViewHeader": true,
+  "nativeMenus": false
 }

@@ -13,12 +13,12 @@
     "admonitions": true,
     "icons": true,
     "other": true,
-    "advanced": true
+    "advanced": false
   },
   "icons": [],
   "useFontAwesome": true,
   "rpgDownloadedOnce": false,
   "msDocConverted": true,
   "useSnippet": false,
-  "snippetPath": "custom-admonitions.1fd2b2"
+  "snippetPath": "custom-admonitions.b0f439"
 }

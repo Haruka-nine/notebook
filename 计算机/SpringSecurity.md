@@ -422,6 +422,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 
+
 #### 认证过滤器
 我们需要自定义一个过滤器，这个过滤器会去获取请求头中的token，对token进行解析取出其中的userid。
 
@@ -441,6 +442,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 >[!note] 用户信息需要存入SecurityContextHolder
 >过滤器链的FilterSecurityInterceptor是去进行认证的，他的信息获取就是从SecurityContextHolder中进行获取，来看你是否认证通过，所以我们需要存入
+
 
 过滤器代码
 ```java
