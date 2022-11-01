@@ -338,10 +338,20 @@ feign服务调用自动负载均衡，采用轮询
 </dependency>
 ```
 
+由于Spring Cloud [Feign](https://so.csdn.net/so/search?q=Feign&spm=1001.2101.3001.7020)在Hoxton.M2 RELEASED版本之后不再使用Ribbon而是使用spring-cloud-loadbalancer，所以不引入spring-cloud-loadbalancer会报错.
+
+```xml
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+</dependency>
+```
+
 主启动类添加 **@EnableFeignClients** //关键注解
 
 新建一个service
 
+**@PathVariable的名称一定要写，不写会有问题**
 ```java
 @Component //别忘了添加这个
 @FeignClient(value = "CLOUD-PROVIDER-SERVICE")  //服务名称，要和nacos上面的一致才行
@@ -519,6 +529,12 @@ management:
 ```
 
 并且在启动类添加  *@EnableDiscoveryClient* 注解
+
+>[!note] @EnableDiscoveryClient
+>而在新版本的 Spring Cloud 中，这个注解不再是一个必须的步骤，我们只需要通过配置项就可以开启 Nacos 的功能。
+>而配置项是默认开启的
+>也就是说，高版本中，引入nacos的依赖就是默认注册的
+
 ### RestTemplate请求转发
 
 添加配置项

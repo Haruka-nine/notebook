@@ -868,8 +868,6 @@ public class User {
 
 ## 4.@TableLogic
 
-
-
 ### 4.1	逻辑删除
 
 ---
