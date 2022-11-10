@@ -85,6 +85,16 @@ GateWay的三大核心概念：
 
 ```
 
+>[!note] 负载均衡
+>spring cloud2020弃用了[Ribbon](https://so.csdn.net/so/search?q=Ribbon&spm=1001.2101.3001.7020)，因此Alibaba在2021版本nacos中删除了Ribbon的jar包，因此无法通过lb路由到指定微服务，出现了503情况。
+>需要我们自己去引入负载均衡插件
+>
+```xml
+<dependency>  
+    <groupId>org.springframework.cloud</groupId>  
+    <artifactId>spring-cloud-starter-loadbalancer</artifactId>  
+</dependency>
+```
 配置文件
 
 ```yml
@@ -152,7 +162,7 @@ public class GateWayConfig{
 ```
 
 就是说我们在访问 http://localhost:9527/guonei 时，就会转发给http://news.baidu.com/guonei
-
+ 
 ### 动态配置路由
 上述的两种配置我们配置的路由地址都是死的，如果我们有同一服务有多个服务器
 我们需要实现 根据注册服务名调用实现负载均衡
@@ -534,6 +544,7 @@ management:
 >而在新版本的 Spring Cloud 中，这个注解不再是一个必须的步骤，我们只需要通过配置项就可以开启 Nacos 的功能。
 >而配置项是默认开启的
 >也就是说，高版本中，引入nacos的依赖就是默认注册的
+>引入nacos不想用需要配置spring.cloud.nacos.discovery.enabled=false
 
 ### RestTemplate请求转发
 

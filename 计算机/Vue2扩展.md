@@ -18,8 +18,6 @@ npm i vue-awesome-swiper@4.1.1
 
 官方文档 ：https://github.com/surmon-china/vue-awesome-swiper/tree/v4.1.1
 
-### 客户端渲染
-
 单组件引入这样:
 
 ```js
@@ -49,7 +47,7 @@ Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 ```
 
 
-示例代码
+**组件方式使用**
 ```html
 <template>
   <swiper class="swiper" ref="mySwiper" :options="swiperOptions">
@@ -90,8 +88,7 @@ Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 
 如果想要给模块加样式，可以点开源代码看开对应的类名然后写css
 
-### nuxt
-
+**指令方式使用**
 vue-awesome-swiper.js文件
 ```js
 import Vue from 'vue'
