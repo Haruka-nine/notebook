@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/Linux/Docker.md",
+                "file": "计算机/前端/Ajax.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/Linux/Docker.md"
+                "file": "计算机/前端/Ajax.md"
               }
             }
           },
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机/Linux/Docker.md",
+                "file": "计算机/前端/Ajax.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机/Linux/Docker.md",
+                "file": "计算机/前端/Ajax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,12 +151,15 @@
       "graph:查看关系图谱": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "remotely-save:Remotely Save": false
     }
   },
   "active": "e15086cbe32485fb",
   "lastOpenFiles": [
+    "计算机/Linux/Linux.md",
     "计算机/Linux/git.md",
+    "计算机/Linux/Docker.md",
     "计算机/pythopn-AI/机器学习.md",
     "计算机/前端/Ajax.md",
     "计算机/前端/Vue2.md",
@@ -184,8 +187,6 @@
     "计算机/pythopn-AI/深度学习.md",
     "计算机/前端/node.js.md",
     "计算机/前端/wechat.md",
-    "计算机/Linux/Nginx.md",
-    "计算机/Linux/Linux.md",
     "图片/image 1.png",
     "Junit+94f28f30-4d7f-4a39-8986-28e4cae062bc",
     "图片/image.png",
