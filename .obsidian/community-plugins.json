@@ -1,5 +1,11 @@
 [
-  "obsidian-git",
   "obsidian-admonition",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "media-extended",
+  "obsidian-mind-map",
+  "obsidian-annotator",
+  "mx-bili-plugin",
+  "execute-code",
+  "obsidian-chartsview-plugin",
+  "obsidian-git"
 ]

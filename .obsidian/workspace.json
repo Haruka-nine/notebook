@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "9d5b09d6e8d5481b",
+        "id": "0f6e6811424930a7",
         "type": "tabs",
         "children": [
           {
-            "id": "4af05e002da5c5f5",
+            "id": "e15086cbe32485fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/springboot简洁.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "008e58a594b6f181",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "计算机/spring cloud.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cd32776197ef8e2b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "计算机/Nginx.md",
-                "mode": "preview",
+                "file": "计算机/Linux/Docker.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/spring cloud.md"
+                "file": "计算机/Linux/Docker.md"
               }
             }
           },
@@ -83,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "打包方式",
+                "query": "生命周期",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,13 +74,20 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "906ca15f51f03dbd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 245.5095977783203
+    "width": 266.00000190734863
   },
   "right": {
     "id": "e34283bff16cf268",
@@ -121,8 +103,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机/spring cloud.md",
-                "collapseAll": false,
+                "file": "计算机/Linux/Docker.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -138,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机/spring cloud.md",
+                "file": "计算机/Linux/Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,17 +144,64 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "008e58a594b6f181",
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "e15086cbe32485fb",
   "lastOpenFiles": [
-    "计算机/springboot简洁.md",
-    "计算机/springboot-1.md",
-    "计算机/spring cloud.md",
-    "计算机/SpringSecurity.md",
-    "计算机/Nginx.md",
-    "计算机/springboot问题.md",
-    "计算机/spring boot 扩展.md",
-    "计算机/Ajax.md",
-    "计算机/MyBatis-Plus.md",
-    "计算机/MyBatis.md"
+    "计算机/Linux/git.md",
+    "计算机/pythopn-AI/机器学习.md",
+    "计算机/前端/Ajax.md",
+    "计算机/前端/Vue2.md",
+    "计算机/前端/Vue2扩展.md",
+    "计算机/前端/vue3.md",
+    "计算机/前端/问题处理/Vue问题.md",
+    "计算机/pythopn-AI/问题处理/python问题.md",
+    "计算机/前端/问题处理",
+    "计算机/应用方向",
+    "计算机/工具使用问题/pychon环境选择.md",
+    "计算机/pythopn-AI/问题处理",
+    "计算机/前端/css.md",
+    "计算机/前端/es6.md",
+    "计算机/java后端/问题处理/springboot问题.md",
+    "计算机/java后端/问题处理",
+    "计算机/java后端/技术原理/spring boot 扩展.md",
+    "计算机/java后端/技术原理/SpringSecurity.md",
+    "计算机/java后端/技术原理/SpringMVC.md",
+    "计算机/java后端/技术原理/MyBatis-Plus.md",
+    "计算机/pythopn-AI/pytorch.md",
+    "计算机/pythopn-AI/yolov5.md",
+    "计算机/pythopn-AI/tensorRT.md",
+    "计算机/pythopn-AI/tensorflow.md",
+    "计算机/pythopn-AI/Numpy & Pandas.md",
+    "计算机/pythopn-AI/深度学习.md",
+    "计算机/前端/node.js.md",
+    "计算机/前端/wechat.md",
+    "计算机/Linux/Nginx.md",
+    "计算机/Linux/Linux.md",
+    "图片/image 1.png",
+    "Junit+94f28f30-4d7f-4a39-8986-28e4cae062bc",
+    "图片/image.png",
+    "计算机/java后端/技术原理",
+    "计算机/java后端/工具库的使用",
+    "blander/王佳明的简历.pdf",
+    "未命名.canvas",
+    "计算机/AI/王佳明的简历.pdf",
+    "图片/Pasted image 20230424173633.png",
+    "图片/Pasted image 20230424171655.png",
+    "图片/Pasted image 20230424171247.png",
+    "图片/Pasted image 20230424171234.png",
+    "图片/Pasted image 20230424170136.png",
+    "图片/Pasted image 20230424170039.png",
+    "图片/Pasted image 20230424165855.png",
+    "图片/Pasted image 20230424165749.png",
+    "计算机/工具使用问题"
   ]
 }
