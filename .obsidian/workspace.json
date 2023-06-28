@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/pythopn-AI/机器学习.md",
+                "file": "计算机/Linux/git.md",
                 "mode": "preview",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/pythopn-AI/机器学习.md"
+                "file": "计算机/Linux/git.md"
               }
             }
           },
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机/pythopn-AI/机器学习.md",
+                "file": "计算机/Linux/git.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机/pythopn-AI/机器学习.md",
+                "file": "计算机/Linux/git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,9 +157,9 @@
   },
   "active": "e15086cbe32485fb",
   "lastOpenFiles": [
+    "计算机/pythopn-AI/机器学习.md",
     "计算机/pythopn-AI/问题处理/python问题.md",
     "计算机/pythopn-AI/pytorch.md",
-    "计算机/pythopn-AI/机器学习.md",
     "计算机/java后端/工具库的使用/RestTemplate.md",
     "计算机/java后端/工具库的使用/FastJson.md",
     "计算机/java后端/工具库的使用/Jsoup.md",
