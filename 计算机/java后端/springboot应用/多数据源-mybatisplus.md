@@ -118,3 +118,4 @@ public interface UserSecondMapper extends BaseMapper<User> {
 }
 ```
 
+在mapper和service中加都可以，然后方法和类中加都可以，方法的优先级高于类
