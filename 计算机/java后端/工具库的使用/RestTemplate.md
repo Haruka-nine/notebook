@@ -186,3 +186,7 @@ public RestTemplate httpClientRestTemplate(){
  
 ```
 
+## post方法中如果使用map传参
+
+post方法中如果使用map传参,需要使用MultiValueMap来传递
+`MultiValueMap<String, Object> multiValueMap = new LinkedMultiValueMap<>();`
