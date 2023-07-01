@@ -167,8 +167,6 @@ public RestTemplate httpClientRestTemplate(){
 
 注意：上传文件时的value为`FileSystemResource`
 
-
-
 ```Java
 @Test
     public void testPostFile(){
