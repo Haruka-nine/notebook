@@ -747,7 +747,8 @@ EasyExcel.read(fileName, DemoData.class, new DemoDataListener()).sheet()
 # Mybatis-plus代码生成
 
 根据数据库进行代码反向生成
-官网：https://baomidou.com/pages/779a6e/
+官网：
+https://baomidou.com/pages/779a6e/
 
 ## 依赖导入
 ```xml
