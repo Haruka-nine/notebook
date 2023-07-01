@@ -1,0 +1,2 @@
+
+在Mapper上添加@Mapper标注，在springboot启动时，就会有拦截器拦截到这个，然后对bean生成bean

@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/java后端/springboot应用/多数据源-mybatisplus.md",
+                "file": "计算机/java后端/技术原理/MyBatis-Plus.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b6c5c65089524834",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机/java后端/技术原理/MyBatis-Plus.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/java后端/springboot应用/多数据源-mybatisplus.md"
+                "file": "计算机/java后端/技术原理/MyBatis-Plus.md"
               }
             }
           },
@@ -83,7 +96,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -103,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机/java后端/springboot应用/多数据源-mybatisplus.md",
+                "file": "计算机/java后端/技术原理/MyBatis-Plus.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机/java后端/springboot应用/多数据源-mybatisplus.md",
+                "file": "计算机/java后端/技术原理/MyBatis-Plus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,35 +169,35 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "e15086cbe32485fb",
+  "active": "7eae6e084d96ab9d",
   "lastOpenFiles": [
-    "计算机/java后端/工具库的使用/RestTemplate.md",
-    "计算机/java后端/springboot应用/多数据源-mybatisplus.md",
+    "计算机/java后端/技术原理/MyBatis.md",
+    "计算机/java后端/技术原理/spring cloud.md",
+    "计算机/java后端/技术原理/springboot-1.md",
+    "计算机/java后端/技术原理/spring boot 扩展.md",
+    "计算机/java后端/技术原理/springboot-2.md",
+    "计算机/java后端/技术原理/springboot简洁.md",
+    "计算机/java后端/技术原理/SpringMVC.md",
+    "计算机/java后端/springboot应用/@Mapper和@MapperScan.md",
     "计算机/java后端/springboot应用/mapper.xml路径.md",
+    "计算机/java后端/springboot应用/多数据源-mybatisplus.md",
+    "计算机/java后端/技术原理/MyBatis-Plus.md",
+    "计算机/java后端/工具库的使用/RestTemplate.md",
     "计算机/java后端/springboot问题/模块不能使用maven.md",
     "计算机/java后端/springboot问题",
     "计算机/java后端/技术原理/JDBC.md",
     "计算机/java后端/技术原理/JVM.md",
-    "计算机/java后端/技术原理/MyBatis.md",
-    "计算机/java后端/技术原理/spring boot 扩展.md",
-    "计算机/java后端/技术原理/springboot-1.md",
-    "计算机/java后端/技术原理/springboot简洁.md",
     "计算机/数据库/redis.md",
-    "计算机/java后端/技术原理/springboot-2.md",
-    "计算机/java后端/技术原理/spring cloud.md",
     "计算机/Linux/Docker.md",
     "计算机/java后端/技术原理/SpringSecurity.md",
     "计算机/java后端/工具库的使用/Junit.md",
     "计算机/java后端/工具库的使用/Gson.md",
     "计算机/java后端/工具库的使用/Jsoup.md",
     "计算机/java后端/工具库的使用/FastJson.md",
-    "计算机/java后端/技术原理/MyBatis-Plus.md",
     "计算机/Linux/git.md",
     "计算机/Linux/Linux.md",
     "计算机/Linux/Nginx.md",
     "计算机/pythopn-AI/机器学习.md",
-    "计算机/pythopn-AI/问题处理/python问题.md",
-    "计算机/pythopn-AI/pytorch.md",
     "计算机/前端/问题处理",
     "计算机/应用方向",
     "计算机/pythopn-AI/问题处理",
