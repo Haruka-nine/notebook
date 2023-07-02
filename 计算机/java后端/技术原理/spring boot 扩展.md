@@ -1141,10 +1141,13 @@ public class mybatisConfig {
     /**  
      * 分页插件  
      */  
-    @Bean  
-    public PaginationInterceptor paginationInterceptor() {  
-        return new PaginationInterceptor();  
-    }  
+	@Bean  
+	public MybatisPlusInterceptor mybatisPlusInterceptor() {  
+		MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+		//如果是单一类型数据库，建议都设置数据库类型，否则每次都获取数据库类型，浪费
+		interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.MYSQL));  
+		return interceptor;  
+	} 
 }
 ```
 

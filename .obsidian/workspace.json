@@ -83,7 +83,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -155,20 +156,20 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "c89e01dd3d6e01b1",
+  "active": "7eae6e084d96ab9d",
   "lastOpenFiles": [
-    "计算机/java后端/springboot应用/mybatisplus代码生成.md",
-    "计算机/java后端/springboot应用/mybatis-plus插件.md",
-    "计算机/java后端/springboot应用/@Mapper和@MapperScan.md",
     "计算机/java后端/技术原理/spring boot 扩展.md",
+    "计算机/java后端/技术原理/springboot简洁.md",
+    "计算机/java后端/技术原理/MyBatis-Plus.md",
+    "计算机/java后端/springboot应用/mybatis-plus插件.md",
+    "计算机/java后端/springboot应用/mybatisplus代码生成.md",
+    "计算机/java后端/springboot应用/@Mapper和@MapperScan.md",
     "计算机/java后端/springboot应用/redis.md",
     "计算机/java后端/springboot应用/多数据源-mybatisplus.md",
     "计算机/java后端/springboot应用/自定义异常配置.md",
     "计算机/java后端/springboot应用/mapper.xml路径.md",
-    "计算机/java后端/技术原理/springboot简洁.md",
     "计算机/java后端/工具库的使用/Swagger.md",
     "计算机/java后端/springboot问题/模块不能使用maven.md",
-    "计算机/java后端/技术原理/MyBatis-Plus.md",
     "计算机/java后端/工具库的使用/FastJson.md",
     "计算机/java后端/工具库的使用/Gson.md",
     "计算机/java后端/工具库的使用/Jsoup.md",
