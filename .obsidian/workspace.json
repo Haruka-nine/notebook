@@ -83,7 +83,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -155,7 +156,7 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "c89e01dd3d6e01b1",
+  "active": "7eae6e084d96ab9d",
   "lastOpenFiles": [
     "计算机/java后端/springboot应用/mapper.xml路径.md",
     "计算机/java后端/springboot应用/多数据源-mybatisplus.md",
