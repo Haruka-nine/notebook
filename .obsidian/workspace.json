@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "645ed2cbc030d380",
+        "id": "b4493c1b5ecde471",
         "type": "tabs",
         "children": [
           {
-            "id": "c89e01dd3d6e01b1",
+            "id": "9c7f51575454e015",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "计算机/java后端/springboot应用/日志.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -158,9 +158,10 @@
   },
   "active": "7eae6e084d96ab9d",
   "lastOpenFiles": [
+    "计算机/java后端/工具库的使用/log4j2.md",
+    "计算机/java后端/springboot应用/日志.md",
     "计算机/java后端/springboot应用/mapper.xml路径.md",
     "计算机/java后端/springboot应用/多数据源-mybatisplus.md",
-    "计算机/java后端/springboot应用/日志.md",
     "计算机/java后端/技术原理/spring boot 扩展.md",
     "计算机/java后端/技术原理/springboot简洁.md",
     "计算机/java后端/springboot应用/mybatis-plus插件.md",
@@ -183,8 +184,6 @@
     "计算机/java后端/技术原理/MyBatis.md",
     "计算机/java后端/技术原理/SpringMVC.md",
     "计算机/java后端/springboot问题",
-    "计算机/java后端/技术原理/JDBC.md",
-    "计算机/java后端/技术原理/JVM.md",
     "计算机/前端/问题处理",
     "计算机/应用方向",
     "计算机/pythopn-AI/问题处理",
