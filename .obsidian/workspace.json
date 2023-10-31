@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fa48a7cb230e247e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -165,7 +176,7 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "7ff6c0f2c4adc61a",
+  "active": "fa48a7cb230e247e",
   "lastOpenFiles": [
     "计算机/java后端/springboot应用/mybatis-plus插件.md",
     "计算机/java后端/springboot应用/redis.md",
