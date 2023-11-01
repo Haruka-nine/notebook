@@ -23,9 +23,11 @@
             "id": "fa48a7cb230e247e",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.16"
+                "file": "test/未命名.md",
+                "mode": "preview",
+                "source": false
               }
             }
           }
@@ -59,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/ai交互网站.md"
+                "file": "test/未命名.md"
               }
             }
           },
@@ -114,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机/ai交互网站.md",
+                "file": "test/未命名.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机/ai交互网站.md",
+                "file": "test/未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
