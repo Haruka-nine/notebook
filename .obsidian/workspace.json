@@ -44,6 +44,16 @@
             }
           },
           {
+            "id": "5908f32bd34fb092",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
+          },
+          {
             "id": "7d23fdfa3bce454e",
             "type": "leaf",
             "state": {
@@ -68,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -216,15 +226,15 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "03c2540b01785d08",
+  "active": "5908f32bd34fb092",
   "lastOpenFiles": [
+    "计算机/java后端/工具库的使用/Lombok.md",
+    "计算机/java后端/技术原理/SpringSecurity.md",
     "计算机/数据库/redis.md",
     "计算机/java后端/工具库的使用/Junit.md",
     "计算机/java后端/工具库的使用/Jsoup.md",
     "计算机/java后端/工具库的使用/Gson.md",
     "计算机/java后端/工具库的使用/log4j2.md",
-    "计算机/java后端/工具库的使用/Lombok.md",
-    "计算机/java后端/技术原理/SpringSecurity.md",
     "计算机/java后端/技术原理/springboot简洁.md",
     "计算机/java后端/技术原理/springboot-2.md",
     "计算机/java后端/技术原理/springboot-1.md",
