@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "计算机/装机配置.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -95,7 +95,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -175,12 +176,18 @@
       "graph:查看关系图谱": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "remotely-save:Remotely Save": false
+      "command-palette:打开命令面板": false
     }
   },
   "active": "4b99e136452894b7",
   "lastOpenFiles": [
+    "图片/Pasted image 20240706191044.png",
+    "图片/Pasted image 20240706190942.png",
+    "图片/Pasted image 20240706190654.png",
+    "图片/Pasted image 20240706190344.png",
+    "图片/Pasted image 20240706190248.png",
+    "图片/Pasted image 20240706190228.png",
+    "图片/Pasted image 20240706190214.png",
     "计算机/pythopn-AI/问题处理/python问题.md",
     "计算机/pythopn-AI/pytorch.md",
     "计算机/pythopn-AI/Numpy & Pandas.md",
@@ -206,20 +213,13 @@
     "计算机/前端/问题处理/跨域问题.md",
     "计算机/前端/wechat.md",
     "计算机/前端/node.js.md",
-    "计算机/前端/es6.md",
     "未命名.canvas",
     "图片/Pasted image 20240706173804.png",
     "图片/Pasted image 20240706173745.png",
     "图片/Pasted image 20240706173646.png",
     "图片/Pasted image 20240706173211.png",
-    "图片/Pasted image 20240706173150.png",
-    "图片/Pasted image 20240706173120.png",
-    "图片/Pasted image 20240706173044.png",
-    "图片/Pasted image 20240706172918.png",
-    "图片/Pasted image 20240706172731.png",
     "未命名",
     "未命名 1.canvas",
-    "静止系/attachments/Pasted image 20221111083353.png",
     "test",
     "游戏",
     "计算机/前端/问题处理/跨域问题+f5931ce5-d11d-463d-a39e-de5789727de0.zip",
