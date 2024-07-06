@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/Linux/git.md",
+                "file": "计算机/java后端/技术原理/springboot简洁.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/Linux/git.md"
+                "file": "计算机/java后端/技术原理/springboot简洁.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机/Linux/git.md",
+                "file": "计算机/java后端/技术原理/springboot简洁.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机/Linux/git.md",
+                "file": "计算机/java后端/技术原理/springboot简洁.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,14 +182,27 @@
   },
   "active": "bab37898d32699ff",
   "lastOpenFiles": [
+    "计算机/java后端/技术原理/springboot-1.md",
+    "计算机/java后端/技术原理/spring cloud.md",
+    "计算机/java后端/工具库的使用/FastJson.md",
+    "计算机/java后端/工具库的使用/Gson.md",
+    "计算机/java后端/工具库的使用/Junit.md",
     "计算机/装机配置.md",
+    "未命名.canvas",
+    "图片/Pasted image 20240706173804.png",
+    "图片/Pasted image 20240706173745.png",
+    "图片/Pasted image 20240706173646.png",
+    "图片/Pasted image 20240706173211.png",
+    "图片/Pasted image 20240706173150.png",
+    "图片/Pasted image 20240706173120.png",
+    "图片/Pasted image 20240706173044.png",
+    "图片/Pasted image 20240706172918.png",
+    "图片/Pasted image 20240706172731.png",
+    "计算机/Linux/git.md",
     "test/未命名.md",
     "未命名",
-    "计算机/Linux/git.md",
     "未命名 1.canvas",
-    "未命名.canvas",
     "计算机/java后端/技术原理/springboot简洁.md",
-    "计算机/java后端/技术原理/springboot-1.md",
     "计算机/java后端/技术原理/springboot-2.md",
     "计算机/java后端/技术原理/spring boot 扩展.md",
     "计算机/java后端/工具库的使用/log4j2.md",
@@ -207,28 +220,15 @@
     "计算机/pythopn-AI/问题处理/python问题.md",
     "计算机/pythopn-AI/tensorRT.md",
     "计算机/pythopn-AI/yolov5.md",
-    "计算机/pythopn-AI/pytorch.md",
-    "计算机/pythopn-AI/tensorflow.md",
-    "计算机/pythopn-AI/Numpy & Pandas.md",
-    "计算机/pythopn-AI/深度学习.md",
     "静止系/attachments/Pasted image 20221111083353.png",
     "test",
     "游戏",
-    "图片/Pasted image 20230718212733.png",
-    "图片/Pasted image 20230718212714.png",
     "计算机/前端/问题处理/跨域问题+f5931ce5-d11d-463d-a39e-de5789727de0.zip",
     "计算机/前端/React",
     "计算机/前端/Vue",
     "计算机/java后端/springboot问题",
     "计算机/前端/问题处理",
     "计算机/应用方向",
-    "计算机/pythopn-AI/问题处理",
-    "图片/image 1.png",
-    "图片/image.png",
-    "图片/Pasted image 20230424173633.png",
-    "图片/Pasted image 20230424171655.png",
-    "图片/Pasted image 20230424171247.png",
-    "图片/Pasted image 20230424171234.png",
-    "图片/Pasted image 20230424170136.png"
+    "计算机/pythopn-AI/问题处理"
   ]
 }
