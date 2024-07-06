@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ca6daeda2a782a9e",
+        "id": "9df92efa2b4b713c",
         "type": "tabs",
         "children": [
           {
-            "id": "a45e229bcca423d0",
+            "id": "4b99e136452894b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "bab37898d32699ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机/Linux/git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "test/未命名.md"
+                "file": "计算机/Linux/git.md"
               }
             }
           },
@@ -58,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"计算机/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test/未命名.md",
+                "file": "计算机/Linux/git.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "test/未命名.md",
+                "file": "计算机/Linux/git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,8 +180,20 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "a45e229bcca423d0",
+  "active": "bab37898d32699ff",
   "lastOpenFiles": [
+    "计算机/装机配置.md",
+    "test/未命名.md",
+    "未命名",
+    "计算机/Linux/git.md",
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "计算机/java后端/技术原理/springboot简洁.md",
+    "计算机/java后端/技术原理/springboot-1.md",
+    "计算机/java后端/技术原理/springboot-2.md",
+    "计算机/java后端/技术原理/spring boot 扩展.md",
+    "计算机/java后端/工具库的使用/log4j2.md",
+    "计算机/java后端/工具库的使用/Lombok.md",
     "计算机/前端/问题处理/Vue问题.md",
     "计算机/前端/问题处理/跨域问题.md",
     "计算机/前端/Ajax.md",
@@ -177,7 +202,6 @@
     "计算机/前端/node.js.md",
     "计算机/前端/wechat.md",
     "计算机/Linux/Docker.md",
-    "计算机/Linux/git.md",
     "计算机/Linux/Linux.md",
     "计算机/Linux/Nginx.md",
     "计算机/pythopn-AI/问题处理/python问题.md",
@@ -187,19 +211,9 @@
     "计算机/pythopn-AI/tensorflow.md",
     "计算机/pythopn-AI/Numpy & Pandas.md",
     "计算机/pythopn-AI/深度学习.md",
-    "计算机/pythopn-AI/机器学习.md",
-    "计算机/java后端/springboot应用/redis.md",
-    "计算机/java后端/技术原理/JDBC.md",
-    "计算机/java后端/工具库的使用/Swagger.md",
-    "计算机/java后端/工具库的使用/RestTemplate.md",
-    "计算机/java后端/工具库的使用/Jsoup.md",
-    "计算机/java后端/工具库的使用/FastJson.md",
-    "计算机/ai交互网站.md",
     "静止系/attachments/Pasted image 20221111083353.png",
     "test",
     "游戏",
-    "未命名 1.canvas",
-    "未命名.canvas",
     "图片/Pasted image 20230718212733.png",
     "图片/Pasted image 20230718212714.png",
     "计算机/前端/问题处理/跨域问题+f5931ce5-d11d-463d-a39e-de5789727de0.zip",
@@ -209,7 +223,6 @@
     "计算机/前端/问题处理",
     "计算机/应用方向",
     "计算机/pythopn-AI/问题处理",
-    "计算机/java后端/springboot应用",
     "图片/image 1.png",
     "图片/image.png",
     "图片/Pasted image 20230424173633.png",
