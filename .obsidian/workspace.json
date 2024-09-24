@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "4ae5c1aaea165554",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
+          },
+          {
             "id": "bab37898d32699ff",
             "type": "leaf",
             "state": {
@@ -31,7 +41,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -179,7 +190,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4b99e136452894b7",
+  "active": "4ae5c1aaea165554",
   "lastOpenFiles": [
     "图片/Pasted image 20240706191044.png",
     "图片/Pasted image 20240706190942.png",
