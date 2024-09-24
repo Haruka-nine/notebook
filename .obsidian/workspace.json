@@ -4,45 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "9df92efa2b4b713c",
+        "id": "f1077e271d2c5426",
         "type": "tabs",
         "children": [
           {
-            "id": "4b99e136452894b7",
+            "id": "97c63e78c39a0f09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/装机配置.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4ae5c1aaea165554",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
-          },
-          {
-            "id": "bab37898d32699ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "计算机/java后端/工具库的使用/FastJson.md",
+                "file": "计算机/应用方向/强化学习.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -71,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/装机配置.md"
+                "file": "计算机/应用方向/强化学习.md"
               }
             }
           },
@@ -106,8 +83,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -127,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机/装机配置.md",
+                "file": "计算机/应用方向/强化学习.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机/装机配置.md",
+                "file": "计算机/应用方向/强化学习.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,8 +166,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4ae5c1aaea165554",
+  "active": "97c63e78c39a0f09",
   "lastOpenFiles": [
+    "计算机/应用方向/强化学习.md",
+    "计算机/装机配置.md",
+    "计算机/java后端/工具库的使用/FastJson.md",
     "图片/Pasted image 20240706191044.png",
     "图片/Pasted image 20240706190942.png",
     "图片/Pasted image 20240706190654.png",
@@ -205,7 +184,6 @@
     "计算机/pythopn-AI/tensorflow.md",
     "计算机/pythopn-AI/tensorRT.md",
     "计算机/pythopn-AI/yolov5.md",
-    "计算机/装机配置.md",
     "计算机/pythopn-AI/深度学习.md",
     "计算机/pythopn-AI/机器学习.md",
     "计算机/Linux/Nginx.md",
@@ -217,7 +195,6 @@
     "计算机/java后端/工具库的使用/Junit.md",
     "计算机/java后端/工具库的使用/Jsoup.md",
     "计算机/java后端/工具库的使用/Gson.md",
-    "计算机/java后端/工具库的使用/FastJson.md",
     "计算机/数据库/redis.md",
     "计算机/前端/React/React.md",
     "计算机/前端/问题处理/Vue问题.md",
@@ -228,7 +205,6 @@
     "图片/Pasted image 20240706173804.png",
     "图片/Pasted image 20240706173745.png",
     "图片/Pasted image 20240706173646.png",
-    "图片/Pasted image 20240706173211.png",
     "未命名",
     "未命名 1.canvas",
     "test",
